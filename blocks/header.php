@@ -7,6 +7,7 @@
             <?php if (isset($_COOKIE["login"])) {
                 echo '<li><a href="/user.php">Profile</a></li>';
                 echo '<li><a href="./lib/logout.php">Log out</a></li>';
+                echo '<li><a href="/admin.php">Admin</a></li>';
             } else {
                 echo '<li><a href="/reg.php">Sign Up</a></li>';
                 echo '<li><a href="/auth.php">Log In</a></li>';

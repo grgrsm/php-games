@@ -541,3 +541,49 @@ footer hr {
 footer > p {
     text-align: center;
 }
+/* Общий темный фон модального окна */
+.game-modal,
+.game-modal-delete {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 999; /* Отображается поверх всего сайта */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+}
+
+/* Белое всплывающее окошко по центру */
+.modal-content {
+    background-color: #fefefe;
+    color: #333; /* Темный цвет текста, так как фон белый */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; /* Ограничение по ширине на ПК */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка закрытия (крестик) */
+.close,
+.close-delete {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.close:hover,
+.close-delete:hover,
+.close:focus,
+close-delete:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
